@@ -15,6 +15,7 @@ import java.util.List;
 public class OdontologoDaoH2 implements IDao<Odontologo> {
     private static final Logger LOGGER = Logger.getLogger(OdontologoDaoH2.class);
 
+    //no es necesario dejar escritos los constructores vacios si no tenemos otro
     public OdontologoDaoH2() {
     }
 
@@ -60,7 +61,7 @@ public class OdontologoDaoH2 implements IDao<Odontologo> {
             }
 
         }
-
+    //recuerden que es buena practica retornar un nuevo objeto, en vez de modificar y retornar lo que nos llega por parametro
         return odontologo;
     }
 
